@@ -1,0 +1,6 @@
+; $Id$
+name = Webform options
+description = Preset options for webform field
+package = "Eureka"
+core = 7.x
+version = 7.x-1.0

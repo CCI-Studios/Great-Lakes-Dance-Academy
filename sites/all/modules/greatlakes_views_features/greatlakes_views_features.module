@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the greatlakes views features feature.
+ */
+
+include_once 'greatlakes_views_features.features.inc';

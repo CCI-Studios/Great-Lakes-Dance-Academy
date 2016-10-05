@@ -1,0 +1,31 @@
+name = greatlakes
+description = greatlakes Custom
+core = 7.x
+
+scripts[] = js/form-toggle.js
+scripts[] = js/fascility-scroller.js
+scripts[] = swipebox-master/js/jquery.swipebox.min.js
+stylesheets[all][] = js/responsive_table/ng_responsive_tables.css
+scripts[] = js/responsive_table/ng_responsive_tables.js
+scripts[] = js/map.js
+scripts[] = js/instagram.js
+scripts[] = js/menu-btn.js
+
+
+stylesheets[all][] = css/screen.css
+
+stylesheets[all][] = swipebox-master/css/swipebox.min.css
+
+
+regions[navigation] = Navigation
+regions[header] = Header
+regions[header2] = Header image
+regions[grey-region] =Grey Region
+regions[grey-header-region] =Grey header Region
+regions[white-region] =white Region front
+regions[content] = Content
+regions[white-region-bottom] =white Region bottom
+regions[sidebar] = Sidebar
+regions[widgets] = Widgets
+regions[social-footer] = Social Footer
+regions[footer] = Footer
