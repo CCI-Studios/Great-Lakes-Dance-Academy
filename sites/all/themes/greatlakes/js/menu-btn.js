@@ -13,16 +13,12 @@
 		});
 		$("#block-views-modules-front-block .views-row-3").click(function() 
 		{
-    		window.location = "/registration";
+    		window.location = "/pricing-and-info";
 		});
 		$("#block-views-modules-front-block .views-row-4").click(function() 
 		{
     		window.location = "/class-schedule";
 		});
-        $("#block-views-modules-front-block .views-row-4").click(function() 
-        {
-            window.location = "/class-schedule";
-        });
 
         $('#block-views-modules-front-block .views-row').css('cursor','pointer');
     
@@ -32,13 +28,14 @@
             $("#block-block-12 .content").css('display','none');
         };
 
-        $('#block-block-19 table.openings').ngResponsiveTables({
+         $('#block-block-19 table.openings').ngResponsiveTables({
             smallPaddingCharNo: 13,
             mediumPaddingCharNo: 18,
             largePaddingCharNo: 30
-        });
+          });
 
 	});
+
 
 
 	function toggleMenu()
