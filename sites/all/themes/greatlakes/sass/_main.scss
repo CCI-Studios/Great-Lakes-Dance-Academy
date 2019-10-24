@@ -5,9 +5,7 @@
 
 body
 {
-	font-family: "proxima-nova",sans-serif;
 	line-height:1;
-	-webkit-font-smoothing: antialiased;
 }
 
 p
@@ -20,9 +18,8 @@ p
 h1
 {
 	font-size:58px;
-	font-family:"crimson";
+	font-family:"Playfair Display";
 	margin-bottom:30px;
-	-webkit-font-smoothing: antialiased;
 }
 
 tbody
@@ -41,7 +38,6 @@ td
 {
 	height:40px;
 	width:50px;
-	font-family: "proxima-nova",sans-serif;
 	padding-left:5px;
 	border:0px;
 }
@@ -72,7 +68,7 @@ h2,
 .views-field-title
 {
 	font-size:40px;
-	font-family:"crimson";
+	font-family:"Playfair Display";
 	margin-bottom:30px;
 	font-weight:300;
 	-webkit-font-smoothing: antialiased;
@@ -131,24 +127,16 @@ hr
 
 #social-footer h2
 {
-	border-bottom:3px solid #ffffff;	
-	padding-bottom:1px;	
-	margin-bottom:30px;
-}
-
-#social-footer h2:after
-{	
-	content:"";
-	display:block;
+	padding-bottom: 15px;
 	border-bottom:2px solid #ffffff;
-	padding-top:5px;
+	margin-bottom:30px;
 }
 
 h3, .views-field-title
 {
 	font-size:24px;
 	border-bottom:1px solid black;
-	font-family:"crimson";
+	font-family:"Playfair Display";
 	min-width:270px;
 	display:inline-block;
 	margin-bottom:20px;
@@ -163,6 +151,7 @@ h3, .views-field-title
 .region-header
 {
 	max-width:945px;
+	height: 75px;
 	margin:0 auto;
 	padding:10px 10px 25px;
 }
@@ -193,12 +182,13 @@ a:visited,
 a:hover,
 a.active
 {
-	color:$green;
+	color:$darkblue;
 }
 
 #block-system-main-menu
 {	
 	overflow: visible;
+	margin-top: 7px;
 	
 	ul.menu 
 	{	
@@ -206,19 +196,22 @@ a.active
 
 		li
 		{
-			float:left;
+			display: inline-block;
 			list-style:none;
 			margin:0;
 			padding:0;
-			vertical-align: middle;
+			vertical-align: bottom;
+			max-width: 120px;
+			position: relative;
 		}
 
 		a
 		{
-			padding-left:5px;
-			padding-right:5px;
-			padding-bottom:30px;
+			display: block;
+			padding: 0 5px 11px 5px;
 			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 13px;
 		}
 
 		li.expanded
@@ -229,24 +222,26 @@ a.active
 				position:absolute;
 				float: none;
 				background:$blue;
-				margin-top:29px;
 				min-width:50px;
-				margin-right:-50px;
 				z-index: 999;
 				width:120px;
+				left: 0;
+				top: 100%;
 
 				li
 				{	
-					float:none;
+					display: block;
+					max-width: none;
 
 					&:hover
 					{
-						background:$green;
+						background:$darkblue;
 					}
 
 					a
 					{
 						font-weight: normal;
+						text-transform: none;
 					}
 				}
 
@@ -382,10 +377,11 @@ a.active
 		vertical-align:middle;
 		color:white;
 		margin-left: 10px;
+		font-weight: bold;
 
 		&:hover
 		{
-			background-color:$green;
+			background-color:$darkblue;
 		}
 	}
 
@@ -478,7 +474,7 @@ a.active
 {
 	max-width:965px;
 	margin:0 auto;
-	padding:35px 0px;
+	padding:70px 0px;
 	overflow: hidden;
 
 	.fb-like-box
@@ -499,7 +495,6 @@ a.active
 {	
 	background:url("../images/banner-image.png");
 	background-size:cover;
-	-ms-behavior: url("/sites/all/themes/greatlakes/css/backgroundsize.htc");
 	padding-top:250px;
 	padding-bottom:230px;
 	position:relative;

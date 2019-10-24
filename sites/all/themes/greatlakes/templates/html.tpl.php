@@ -48,9 +48,7 @@
   <?php print $head; ?>
   <meta name="viewport" content="width=device-width, user-scalable=yes">
   <title><?php print $head_title; ?></title>
-  <script src="//use.typekit.net/gpb0pcf.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <?php print $styles; ?>
   <?php print $scripts; ?>
