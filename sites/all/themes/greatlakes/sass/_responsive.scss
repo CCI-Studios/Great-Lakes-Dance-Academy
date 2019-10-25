@@ -223,19 +223,21 @@
 	{
 		float: none;
 		text-align: center;
+		width: auto;
+		margin-bottom: 30px;
 
 		img
 		{
-			padding-left:23px;
+			max-width: 320px;
 		}
 	}
 
 	#block-block-6
 	{
 		float: none;
-		max-width: 232px;
+		width: auto;
+		max-width: 230px;
 		margin: 0 auto;
-		padding-bottom:20px;
 	}
 
 	#footer-inner
@@ -273,12 +275,15 @@
 		top: 110px;
 		background:$blue;
 		z-index: 9999;
+		margin-top: 0;
 
 		ul.menu
 		{	
-			li
+			li,
+			.dance-programs
 			{
-				float: none;
+				display: block;
+				max-width: none;
 			}
 
 			a
@@ -287,12 +292,7 @@
 				border-bottom: 1px solid #00addc;
 				padding-bottom: 0px;
 				display: block;
-				padding:15px 10px;
-
-				&:hover
-				{
-					background:$green;
-				}
+				padding:12px 15px;
 			}
 
 			li.expanded ul.menu
@@ -305,7 +305,7 @@
 
 				li a
 				{
-					padding:15px 20px;
+					padding:12px 25px;
 				}
 
 				li:first-child:before
@@ -322,6 +322,9 @@
 	}
 
 	#header
+	{
+		height: 110px;
+	}
 
 	#block-block-18 .content a
 	{
@@ -537,21 +540,15 @@
 
 	#block-block-7
 	{
-		h2
+		h1
 		{
-			padding-left:20px;
-			padding-right: 20px;
+			font-size: 45px;
 
 			&:before,
 			&:after
 			{
-				width:35%;
+				width:30%;
 			}
-		}
-
-		.content
-		{
-			padding:0 20px;
 		}
 	}
 
@@ -816,6 +813,21 @@
 		iframe
 		{
 			width:100% ! important;
+		}
+	}
+}
+
+@media (max-width: 460px)
+{
+	#block-block-1
+	{
+		padding: 0;
+		max-width: 75%;
+
+		img
+		{
+			width: 100% !important;
+			height: auto !important;
 		}
 	}
 }

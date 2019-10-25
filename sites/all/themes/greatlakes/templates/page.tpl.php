@@ -155,11 +155,12 @@
     <div id="footer">
       <div>
         <div id="footer-inner">
-        <?php print render($page['footer']); ?>
-        <div id="site-by-cci" ><p>Website by <a href="http://ccistudios.com" target="_blank"><img src="/sites/all/themes/greatlakes/images/cci-logo.png"></a></div>
-        </p></div>
+          <?php print render($page['footer']); ?>
+        </div>
       </div>
     </div> <!-- /#footer -->
+
+    <div id="site-by-cci" >Website by <a href="https://ccistudios.com" target="_blank">CCI Studios</a></div>
   </div>
 </div>
 </div> <!-- /#page-wrapper -->

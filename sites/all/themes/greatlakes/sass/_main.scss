@@ -8,18 +8,58 @@ body
 	line-height:1;
 }
 
+a,
+li a.active,
+a:visited,
+{
+	color:$blue;
+	text-decoration:none;
+}
+
+a:hover,
+a.active
+{
+	color:$darkblue;
+}
+
 p
 {
-	padding-bottom:20px;
 	line-height:1.3;
 	font-size:16px;
+	margin-bottom: 1.5em;
+
+	&:last-child
+	{
+		margin-bottom: 0;
+	}
 }
 
 h1
 {
-	font-size:58px;
+	font-size:60px;
 	font-family:"Playfair Display";
 	margin-bottom:30px;
+	color: $darkblue;
+	font-weight: normal;
+}
+h2
+{
+	color: $blue;
+	font-size: 30px;
+	margin-bottom: 1em;
+}
+h3
+{
+	color: $blue;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 1em;
+}
+
+#main-wrapper img
+{
+	max-width: 100%;
+	height: auto !important;
 }
 
 tbody
@@ -64,14 +104,12 @@ tbody tr:hover:first-child
 	//background-color:white;
 }
 
-h2,
 .views-field-title
 {
 	font-size:40px;
 	font-family:"Playfair Display";
 	margin-bottom:30px;
-	font-weight:300;
-	-webkit-font-smoothing: antialiased;
+	font-weight:normal;
 }
 
 h4
@@ -98,33 +136,6 @@ hr
 	min-height:340px;
 }
 
-#content,
-#video-text
-{
-	h1,h2
-	{
-		border-bottom:3px solid #242424;	
-		padding-bottom:1px;	
-		min-width:472px;
-		display: inline-block;
-		line-height:0.9em;
-	}
-
-	h1:after,
-	h2:after
-	{	
-		content:"";
-		display:block;
-		border-bottom:2px solid #242424;
-		padding-top:13px;
-	}
-}
-
-#video-text h1
-{
-	min-width:100%;
-}
-
 #social-footer h2
 {
 	padding-bottom: 15px;
@@ -132,7 +143,7 @@ hr
 	margin-bottom:30px;
 }
 
-h3, .views-field-title
+.views-field-title
 {
 	font-size:24px;
 	border-bottom:1px solid black;
@@ -150,7 +161,7 @@ h3, .views-field-title
 
 .region-header
 {
-	max-width:945px;
+	max-width:1100px;
 	height: 75px;
 	margin:0 auto;
 	padding:10px 10px 25px;
@@ -170,21 +181,6 @@ h3, .views-field-title
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
-a,
-li a.active,
-a:visited,
-{
-	color:$blue;
-	text-decoration:none;
-	font-size:14px;
-}
-
-a:hover,
-a.active
-{
-	color:$darkblue;
-}
-
 #block-system-main-menu
 {	
 	overflow: visible;
@@ -201,8 +197,12 @@ a.active
 			margin:0;
 			padding:0;
 			vertical-align: bottom;
-			max-width: 120px;
+			max-width: 126px;
 			position: relative;
+		}
+		.dance-programs
+		{
+			max-width: 90px;
 		}
 
 		a
@@ -211,7 +211,7 @@ a.active
 			padding: 0 5px 11px 5px;
 			font-weight: bold;
 			text-transform: uppercase;
-			font-size: 13px;
+			font-size: 14px;
 		}
 
 		li.expanded
@@ -308,7 +308,6 @@ a.active
 	background-image:url("../images/inner-grey-header.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
-	-ms-behavior: url("/sites/all/themes/greatlakes/css/backgroundsize.htc");
 	position:relative;
 	background-position:bottom;
 	padding: 160px 0px 80px;
@@ -320,7 +319,7 @@ a.active
 
 	&:hover, &::after
 	{
-		background-image:url("../images/facebook-hover.png");
+		background-image:url("../images/facebook-dark.png");
 	}
 }
 
@@ -330,7 +329,7 @@ a.active
 
 	&:hover, &::after
 	{
-		background-image:url("../images/twitter-hover.png");
+		background-image:url("../images/twitter-dark.png");
 	}
 }
 
@@ -340,7 +339,7 @@ a.active
 
 	&:hover, &::after
 	{
-		background-image:url("../images/instagram-hover.png");
+		background-image:url("../images/instagram-dark.png");
 	}
 }
 
@@ -350,7 +349,7 @@ a.active
 
 	&:hover, &::after
 	{
-		background-image:url("../images/youtube-hover.png");
+		background-image:url("../images/youtube-dark.png");
 	}
 }
 
@@ -401,7 +400,7 @@ a.active
 
 #footer #danceprograms p
 {
-	padding-bottom:20px;
+	margin-bottom:20px;
 }
 
 .region-footer > div
@@ -412,41 +411,50 @@ a.active
 #footer
 {
 	color:$blue;
-	max-width:945px;
+	max-width:1100px;
 	margin:0 auto;
-	padding:40px 0px;
+	padding:40px 25px;
+	font-size: 14px;
 
 	p
 	{
-		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+	a
+	{
+		font-size: 14px;
 	}
 }
 
 #site-by-cci
 {	
 	display: block;
-	max-width: 400px;
 	margin: 0 auto;
 	text-align: center;
+	border-top: 1px solid #cdcdcd;
+	padding: 30px 0;
+	color: #cdcdcd;
+	font-weight: 300;
+	font-size: 12px;
+	clear: both;
 
-	p
+	a
 	{
-		font-size: 14px;
-	}
+		color: inherit;
 
-	img
-	{
-		vertical-align: middle;
+		&:hover
+		{
+			text-decoration: underline;
+		}
 	}
 }
 
 #grey-region
 {	
 	overflow:hidden;
-	background-image:url("../images/inner_header.png");
+	background-image:url("../images/bg-home-buttons-block.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
-	-ms-behavior: url("/sites/all/themes/greatlakes/css/backgroundsize.htc");
 }
 
 .region-grey-region
@@ -459,10 +467,9 @@ a.active
 
 #social-footer
 {
-	background-image:url("../images/social-footer-back.png");
+	background-image:url("../images/bg-social-footer.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
-	-ms-behavior: url("/sites/all/themes/greatlakes/css/backgroundsize.htc");
 
 	p
 	{
@@ -500,6 +507,19 @@ a.active
 	position:relative;
 	background-position: 100% 80%;
 	box-shadow:inset 0 0 0 1000px rgba(0,0,0,0.2);
+
+	&:before
+	{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: black;
+		opacity: 0.25;
+	}
 }
 
 #video-text
@@ -704,7 +724,7 @@ a.active
 
 	&:hover
 	{
-		background-image:url("../images/left-arrow-hover.png");
+		background-image:url("../images/left-arrow-dark.png");
 	}
 }
 
@@ -717,7 +737,7 @@ a.active
 
 	&:hover
 	{
-		background-image:url("../images/right-arrow-hover.png");
+		background-image:url("../images/right-arrow-dark.png");
 	}
 }
 
@@ -855,7 +875,7 @@ a.button-blue
 
 	&:hover
 	{
-		background-color: $green;
+		background-color: $darkblue;
 	}
 }
 

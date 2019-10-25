@@ -7,7 +7,6 @@ scripts[] = js/fascility-scroller.js
 scripts[] = swipebox-master/js/jquery.swipebox.min.js
 stylesheets[all][] = js/responsive_table/ng_responsive_tables.css
 scripts[] = js/responsive_table/ng_responsive_tables.js
-scripts[] = js/map.js
 scripts[] = js/instagram.js
 scripts[] = js/menu-btn.js
 

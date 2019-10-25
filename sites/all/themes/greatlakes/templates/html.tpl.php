@@ -48,8 +48,6 @@
   <?php print $head; ?>
   <meta name="viewport" content="width=device-width, user-scalable=yes">
   <title><?php print $head_title; ?></title>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
