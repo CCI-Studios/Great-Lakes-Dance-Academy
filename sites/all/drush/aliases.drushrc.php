@@ -18,6 +18,7 @@ $aliases['live'] = array(
 	'remote-user'=> 'greatlakes',
 	'path-aliases'=> array(
 		'%files'=> 'sites/default/files',
+		'%drush-script' => '/home/greatlakes/.composer/vendor/bin/drush'
 	)
 );
 
